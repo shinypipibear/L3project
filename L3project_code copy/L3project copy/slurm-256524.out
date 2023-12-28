@@ -1,0 +1,19 @@
+Unable to init server: Could not connect: Connection refused
+Unable to init server: Could not connect: Connection refused
+
+(main.py:427956): Gdk-CRITICAL **: 22:17:14.865: gdk_cursor_new_for_display: assertion 'GDK_IS_DISPLAY (display)' failed
+/home2/nfzl42/.local/lib/python3.8/site-packages/xgboost/compat.py:36: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+  from pandas import MultiIndex, Int64Index
+[232.332 491.45  240.394 489.949   2.287  69.394 853.229 220.518 145.784
+  66.035  25.694  76.125 768.275   1.966  68.223 187.606  59.335 169.42
+ 220.17 ]
+['location_easting_osgr', 'location_northing_osgr', 'longitude', 'latitude', 'day_of_week', 'first_road_class', 'speed_limit', 'second_road_class', 'light_conditions', 'weather_conditions', 'road_surface_conditions', 'special_conditions_at_site', 'urban_or_rural_area', 'time_slot', 'vehicle_type', 'sex_of_driver', 'age_band_of_driver', 'engine_capacity_cc', 'driver_home_area_type']
+[[1.931e+05 5.162e+01 3.000e+01 1.000e+00]
+ [1.808e+05 5.151e+01 3.000e+01 1.000e+00]
+ [1.704e+05 5.142e+01 3.000e+01 1.000e+00]
+ [1.704e+05 5.142e+01 3.000e+01 1.000e+00]
+ [1.900e+05 5.159e+01 3.000e+01 1.000e+00]]
+[ 2  3  1 12  6]
+['longitude', 'latitude', 'location_northing_osgr', 'urban_or_rural_area', 'speed_limit']
+166502
+{'fit_time': array([37.526, 35.819, 36.103, 37.695, 37.162]), 'score_time': array([1.057, 0.995, 0.987, 1.044, 0.997]), 'test_score': array([0.662, 0.669, 0.677, 0.705, 0.675]), 'train_score': array([1., 1., 1., 1., 1.])}

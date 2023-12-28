@@ -1,0 +1,32 @@
+Unable to init server: Could not connect: Connection refused
+Unable to init server: Could not connect: Connection refused
+
+(main.py:458107): Gdk-CRITICAL **: 02:17:24.134: gdk_cursor_new_for_display: assertion 'GDK_IS_DISPLAY (display)' failed
+/home2/nfzl42/.local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home2/nfzl42/.local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home2/nfzl42/.local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+[232.332 491.45  240.394 489.949   2.287  69.394 853.229 220.518 145.784
+  66.035  25.694  76.125 768.275   1.966  68.223 187.606  59.335 169.42
+ 220.17 ]
+[[1.931e+05 5.162e+01 3.000e+01 1.000e+00]
+ [1.808e+05 5.151e+01 3.000e+01 1.000e+00]
+ [1.704e+05 5.142e+01 3.000e+01 1.000e+00]
+ [1.704e+05 5.142e+01 3.000e+01 1.000e+00]
+ [1.900e+05 5.159e+01 3.000e+01 1.000e+00]]
+[ 9 14  5 11  8 17 15 18  7  0  2  3  1 12  6]
+['weather_conditions', 'vehicle_type', 'first_road_class', 'special_conditions_at_site', 'light_conditions', 'engine_capacity_cc', 'sex_of_driver', 'driver_home_area_type', 'second_road_class', 'location_easting_osgr', 'longitude', 'latitude', 'location_northing_osgr', 'urban_or_rural_area', 'speed_limit']
+Accuracy: 0.7688937207616788
+Accuracy: 0.7613823548790933
+Accuracy: 0.8037490940238519
+Accuracy: 0.7836528958292153
+Traceback (most recent call last):
+  File "main.py", line 142, in <module>
+    xgb_cl.fit(X_train, y_train)
+  File "/home2/nfzl42/.local/lib/python3.8/site-packages/xgboost/core.py", line 620, in inner_f
+    return func(**kwargs)
+  File "/home2/nfzl42/.local/lib/python3.8/site-packages/xgboost/sklearn.py", line 1440, in fit
+    raise ValueError(
+ValueError: Invalid classes inferred from unique values of `y`.  Expected: [0 1 2], got [1 2 3]

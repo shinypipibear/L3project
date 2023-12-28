@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Show</title>
+</head>
+<body>
+    <!-- Map -->
+    <div id ='map'>
+        {{ m|safe }}
+        <div style="border-radius: 25px;background-color: rgba(0,0,0,0.1);color: white;width: 33%;height:100%;position: absolute;top:0;right:0" id="sidebar">
+            {% if m_1 == 0 %}
+            <h1 style="text-align: center"> There is 1 route</h1>
+            {% else %}
+            <h1 style="text-align: center"> There are 2 routes</h1>
+            <hr style="border-top: 3px solid #f2f2f0">
+            <button type="button" style="text-align: left;font-size:20px;background-color: transparent; border-width:0; outline: none;color: white" onclick="change(value=1)">
+                Route 1<br/>
+                Distance: {{ over_distance }} Duration: {{ over_duration}}<br/>
+                Severity: {{ over_severity }}
+            </button>
+            <hr style="border-top: 3px solid #f2f2f0">
+            <button type="button" style="text-align: left;font-size:20px;background-color: transparent; border-width:0; outline: none;color: white" onclick="change()">
+                Route 2<br/>
+                Distance: {{ over_distance_1 }} Duration: {{ over_duration_1}}<br/>
+                Severity: {{ over_severity_1 }}
+            </button>
+            <hr style="border-top: 3px solid #f2f2f0">
+            <button type="button" style="margin: 0;position: absolute;top: 50%;left:50%;-ms-transform: translate(-50%, -50%);transform: translate(-50%,-50%)" class="btn btn-primary" onclick="location.href = '/map/option'">Change Origin&Destination</button>
+            {% endif %}
+        </div>
+    </div>
+    <div style="display: none" id ='map_1'>
+        {{ m_1|safe }}
+        <div style="border-radius: 25px;background-color: rgba(0,0,0,0.1);color: white;width: 33%;height:100%;position: absolute;top:0;right:0" id="sidebar_1">
+            <h1 style="text-align: center"> There are 2 routes</h1>
+            <hr style="border-top: 3px solid #f2f2f0">
+            <button type="button" style="text-align: left;font-size:20px;background-color: transparent; border-width:0; outline: none;color: white" onclick="change(value=1)">
+                Route 1<br/>
+                Distance: {{ over_distance }} Duration: {{ over_duration}}<br/>
+                Severity: {{ over_severity }}
+            </button>
+            <hr style="border-top: 3px solid #f2f2f0">
+            <button type="button" style="text-align: left;font-size:20px;background-color: transparent; border-width:0; outline: none;color: white" onclick="change()">
+                Route 2<br/>
+                Distance: {{ over_distance_1 }} Duration: {{ over_duration_1}}<br/>
+                Severity: {{ over_severity_1 }}
+            </button>
+            <hr style="border-top: 3px solid #f2f2f0">
+            <button type="button" style="margin: 0;position: absolute;top: 50%;left:50%;-ms-transform: translate(-50%, -50%);transform: translate(-50%,-50%)" class="btn btn-primary" onclick="location.href = '/map/option'">Change Origin&Destination</button>
+        </div>
+    </div>
+
+    <script>
+    function change(value) {
+        if (value === 1){
+            document.getElementById("map_1").style.display = "none";
+            document.getElementById("map").style.display = "block"
+        } else {
+            document.getElementById("map").style.display = "none";
+            document.getElementById("map_1").style.display = "block"
+        }
+    }
+    </script>
+</body>
+</html>

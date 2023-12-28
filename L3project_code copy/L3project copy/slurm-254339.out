@@ -1,0 +1,31 @@
+Unable to init server: Could not connect: Connection refused
+Unable to init server: Could not connect: Connection refused
+
+(main.py:3075677): Gdk-CRITICAL **: 16:35:24.042: gdk_cursor_new_for_display: assertion 'GDK_IS_DISPLAY (display)' failed
+/home2/nfzl42/.local/lib/python3.8/site-packages/xgboost/compat.py:36: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+  from pandas import MultiIndex, Int64Index
+/home2/nfzl42/.local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home2/nfzl42/.local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home2/nfzl42/.local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+[232.332 491.45  240.394 489.949   2.287  69.394 853.229 220.518 145.784
+  66.035  25.694  76.125 768.275   1.966  68.223 187.606  59.335 169.42
+ 220.17 ]
+['location_easting_osgr', 'location_northing_osgr', 'longitude', 'latitude', 'day_of_week', 'first_road_class', 'speed_limit', 'second_road_class', 'light_conditions', 'weather_conditions', 'road_surface_conditions', 'special_conditions_at_site', 'urban_or_rural_area', 'time_slot', 'vehicle_type', 'sex_of_driver', 'age_band_of_driver', 'engine_capacity_cc', 'driver_home_area_type']
+[[1.931e+05 5.162e+01 3.000e+01 1.000e+00]
+ [1.808e+05 5.151e+01 3.000e+01 1.000e+00]
+ [1.704e+05 5.142e+01 3.000e+01 1.000e+00]
+ [1.704e+05 5.142e+01 3.000e+01 1.000e+00]
+ [1.900e+05 5.159e+01 3.000e+01 1.000e+00]]
+[ 9 14  5 11  8 17 15 18  7  0  2  3  1 12  6]
+['weather_conditions', 'vehicle_type', 'first_road_class', 'special_conditions_at_site', 'light_conditions', 'engine_capacity_cc', 'sex_of_driver', 'driver_home_area_type', 'second_road_class', 'location_easting_osgr', 'longitude', 'latitude', 'location_northing_osgr', 'urban_or_rural_area', 'speed_limit']
+Accuracy: 0.7838176187652369
+              precision    recall  f1-score       support
+1              0.000000  0.000000  0.000000    463.000000
+2              0.470588  0.005242  0.010369   6104.000000
+3              0.784521  0.998865  0.878812  23787.000000
+accuracy       0.783818  0.783818  0.783818      0.783818
+macro avg      0.418370  0.334702  0.296394  30354.000000
+weighted avg   0.709424  0.783818  0.690769  30354.000000

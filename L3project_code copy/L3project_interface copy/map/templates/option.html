@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load crispy_forms_tags %}
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Option</title>
+</head>
+<body>
+    <!-- Map -->
+    <div id ='map'>
+        {{ m|safe }}
+    </div>
+    <div style="border-radius: 25px;background-color: rgba(0,0,0,0.1);color: white;width: 33%;height:100%;position: absolute;top:0;right:0" id="sidebar">
+        <h1 style="text-align: center"> Route </h1>
+        <form method="post">
+          {% csrf_token %}
+          <div style="margin-left: 10px;width: 90%" class="form-group">
+            {{ form_option.origin|as_crispy_field }}
+          </div>
+          <div style="margin-left: 10px;width: 90%" class="form-group">
+            {{ form_option.destination|as_crispy_field }}
+          </div>
+          <div style="position: relative;height: 50px">
+            <button type="submit" style="margin: 0;position: absolute;top: 50%;left:50%;-ms-transform: translate(-50%, -50%);transform: translate(-50%,-50%)" class="btn btn-primary" onclick="">Submit</button>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
